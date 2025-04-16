@@ -1,0 +1,192 @@
+<html lang="en"><head>
+	<meta charset="«utf-8»">
+
+	<title>Seguridad de la EESTn°1</title>
+
+	<link rel="icon" href="icon.svg" type="image/svg+xml">
+	<link rel="icon" sizes="32x32" href="icon.png" type="image/png">
+
+	<!-- Metadatos Open Graph -->
+	<meta property="og:title" content="Seguridad de la EESTn°1">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="Normas de seguridad e información sobre las máquinas.">
+    <!-- <meta property="og:image" content=""> --> 
+
+	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="sakura-dark.css" type="text/css">
+
+	<!--
+    <link rel="preload" href="button-chestbta-h.svg" as="image">
+    <link rel="preload" href="button-LRM-h.svg" as="image">
+    <link rel="preload" href="button-donate-h.svg" as="image">
+    <link rel="preload" href="button-randevents-h.svg" as="image">
+    <link rel="preload" href="button-screenshots-h.svg" as="image">
+	-->
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            padding-top: 50px;
+            background-image: url('fondo.png');
+            background-repeat: repeat;
+            background-size: auto;
+        }
+
+        header {
+            padding-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ocupar toda la pantalla */
+        }
+
+        main {
+            flex-grow: 1; /* Ocupa todo el espacio disponible */
+        }
+        
+            /* Contenedor de los botones */
+        @media (min-width: 600px) {
+            .contenedor-botones {
+            display: flex; /* Alinear botones en fila */
+            flex-direction: row;
+            justify-content: flex-start; /* Alinear a la izquierda */
+            gap: 10px; /* Espacio entre botones */
+            }
+        }
+        @media (max-width: 600px) {
+            .contenedor-botones {
+            display: flex; /* Alinear botones en fila */
+            flex-direction: column;
+            justify-content: flex-start; /* Alinear a la izquierda */
+            gap: 10px; /* Espacio entre botones */
+            }
+        }
+	.header-container {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		gap: 10px
+	}
+
+        .boton-imagen {
+            display: inline-block;
+            height: 38px; /* Altura fija */
+            background-size: contain; /* Escalar para ajustarse al tamaño */
+            background-repeat: no-repeat; /* Evitar que se repita la imagen */
+            text-decoration: none; /* Sin subrayado */
+            transition: background-image 0.3s ease; /* Transición suave */
+        }
+
+        .boton-imagen:hover {
+            border-bottom: 0px solid #000000;
+        }
+    </style>	<link rel="preload" href="button-tg-h.svg" as="image">
+
+</head>
+<body>
+	<header>
+		<div class="header-container">
+		<img src="icon.svg" style="width: 64px;">
+		<h3>EESTn1</h3>
+		</div>
+	<nav>
+	<div class="contenedor-botones">
+        	<!--
+        	<a href="index3.html" class="boton-imagen" aria-label="Página Principal" style="--boton-bg: url('index.svg'); width: 128px; background-image: url(&quot;index.svg&quot;);"></a>
+        
+        	
+        	<a href="https://chestbta.duckdns.org/screenshots.php"
+        	class="boton-imagen"
+        	aria-label="Screenshots"
+		style="--boton-bg: url('button-screenshots.svg');"></a>
+		
+
+		<a href="https://chestbta.duckdns.org/randevents.php" class="boton-imagen" aria-label="Random Events" style="--boton-bg: url('button-randevents.svg'); width: 171px; background-image: url(&quot;button-randevents.svg&quot;);"></a>
+        
+		<a href="https://chestbta.duckdns.org/lrm.php" class="boton-imagen" aria-label="LRM" style="--boton-bg: url('button-lrm.svg'); width: 85px; background-image: url(&quot;button-lrm.svg&quot;);"></a>
+
+		<a href="https://chestbta.duckdns.org/donate.php" class="boton-imagen" aria-label="Donate" style="--boton-bg: url('button-donate.svg'); width: 107px; background-image: url(&quot;button-donate.svg&quot;);"></a>
+		-->
+		</div>
+		</nav>
+		<hr>
+	</header>
+	<main>
+    		<img src="Torno.svg" style="justify-content: center;">
+		<p>
+			Información de la máquina en cuestión
+		</p>
+		<p>
+			más info de la máquina
+		</p>
+		<!--
+			<p>
+			<a href="https://chestbta.duckdns.org/bta-screenshots.php"
+			class="boton-imagen"
+			aria-label="Screenshots"
+			style="--boton-bg: url('button-screenshots.svg');"></a>
+			</p>
+		-->
+		<p>
+			acá va más info
+		</p>
+		<!--
+		<p>
+			<a href="https://t.me/chestbta" class="boton-imagen" aria-label="Join the telegram group" style="--boton-bg: url('button-tg.svg'); width: 265px; background-image: url(&quot;button-tg.svg&quot;);">
+			</a>
+		</p>
+		-->
+		<p>
+			
+		</p>
+	</main>
+	<footer>
+		<hr>
+		<p>
+			Esta página ha sido hecha por Gianluca Mateo Lucia. La información ha sido conseguida por: y tiene el aval de la Escuela de Educación Secundaria Técnica N°1 Coronel Manuel Dorrego.
+		</p>
+	</footer>
+<script>
+    // Obtener todos los botones
+    const botones = document.querySelectorAll('.boton-imagen');
+
+    // Precargar imágenes
+    const precargarImagen = (url) => {
+        const img = new Image();
+        img.src = url;
+    };
+
+    // Configurar imágenes base, hover, y precarga
+    botones.forEach(boton => {
+        const bgBase = boton.style.getPropertyValue('--boton-bg').match(/url\('(.+)'\)/)[1]; // URL base
+        const bgHover = bgBase.replace(/\.svg$/, '-h.svg'); // Generar URL de hover
+
+        // Precargar la imagen base y la de hover
+        precargarImagen(bgBase);
+        precargarImagen(bgHover);
+
+        // Crear una imagen temporal para calcular el ancho automáticamente
+        const img = new Image();
+        img.src = bgBase;
+
+        img.onload = () => {
+            boton.style.width = `${img.width}px`; // Establecer el ancho dinámicamente
+            boton.style.backgroundImage = `url(${bgBase})`; // Establecer imagen base
+        };
+
+        // Cambiar imagen al pasar el mouse
+        boton.addEventListener('mouseover', () => {
+            boton.style.backgroundImage = `url(${bgHover})`;   
+        });
+
+        // Restaurar imagen base al salir el mouse
+        boton.addEventListener('mouseout', () => {
+            boton.style.backgroundImage = `url(${bgBase})`;
+        });
+    });
+</script>
+
+</body></html>
